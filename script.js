@@ -1,7 +1,7 @@
 // ============================================
 // HROAI - Dr. Amireddy Rajani Portfolio
-// Production JavaScript with Modal Navbar Fix
-// Version: 2.0.0
+// Production JavaScript with Scroll Position Fix
+// Version: 2.1.0
 // ============================================
 
 'use strict';
@@ -192,13 +192,16 @@ document.addEventListener('keydown', function(e) {
 
 
 // ============================================
-// IMAGE MODAL FUNCTIONS - ✅ WITH NAVBAR FIX
+// IMAGE MODAL FUNCTIONS - ✅ WITH SCROLL POSITION FIX
 // ============================================
 const imageModal = document.getElementById('imageModal');
 const modalImage = document.getElementById('modalImage');
 const modalBadge = document.getElementById('modalBadge');
 const modalTitle = document.getElementById('modalTitle');
 const modalDescription = document.getElementById('modalDescription');
+
+// ✅ Store scroll position
+let scrollPosition = 0;
 
 // Gallery Data
 const galleryData = [
@@ -240,7 +243,7 @@ const galleryData = [
     }
 ];
 
-// ✅ Open Modal with Navbar Hide
+// ✅ Open Modal - Save Scroll Position
 function openImageModal(index) {
     const data = galleryData[index];
     
@@ -252,9 +255,13 @@ function openImageModal(index) {
     
     imageModal.classList.add('active');
     
-    // ✅ Prevent body scroll
+    // ✅ SAVE current scroll position
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // ✅ Prevent body scroll and maintain position
     document.body.style.overflow = 'hidden';
     document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition}px`;
     document.body.style.width = '100%';
     
     // ✅ Hide navbar on mobile when modal opens
@@ -267,14 +274,18 @@ function openImageModal(index) {
     }
 }
 
-// ✅ Close Modal with Navbar Restore
+// ✅ Close Modal - Restore Scroll Position
 function closeImageModal() {
     imageModal.classList.remove('active');
     
     // ✅ Restore body scroll
     document.body.style.overflow = '';
     document.body.style.position = '';
+    document.body.style.top = '';
     document.body.style.width = '';
+    
+    // ✅ RESTORE scroll position
+    window.scrollTo(0, scrollPosition);
     
     // ✅ Show navbar again
     if (window.innerWidth <= 768) {
@@ -487,21 +498,7 @@ console.log(
 // ============================================
 window.addEventListener('error', function(e) {
     console.error('An error occurred:', e.error);
-    // You can add error reporting service here (e.g., Sentry)
 });
-
-
-// ============================================
-// SERVICE WORKER REGISTRATION (Optional - for PWA)
-// ============================================
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        // Uncomment below if you add a service worker
-        // navigator.serviceWorker.register('/sw.js')
-        //     .then(reg => console.log('Service Worker registered'))
-        //     .catch(err => console.log('Service Worker registration failed'));
-    });
-}
 
 
 // ============================================
