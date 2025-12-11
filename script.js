@@ -224,7 +224,7 @@ const galleryData = [
         description: "Legal awareness campaign for women's rights covered by regional media"
     },
     {
-        src: 'assets/images/legal-consultation.jpg',
+        src: 'assets/images/office-counseling.jpg',
         badge: 'LEGAL AID 💼',
         title: 'Legal Aid & Rights Counseling Session',
         description: 'Dr. Rajani provides comprehensive legal consultation and documentation support to families seeking justice and rights protection'
