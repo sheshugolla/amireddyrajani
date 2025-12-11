@@ -1,0 +1,4768 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+assets/decorative/.gitkeep
+assets/icons/.gitkeep
+assets/images/.gitkeep
+blog.html
+css/animations.css
+css/config.css
+css/responsive.css
+css/style.css
+index.html
+js/main.js
+privacy.html
+robots.txt
+sitemap.xml
+terms.html
+test.html
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="css/animations.css">
+/* ===========================================
+   HROAI - ANIMATIONS & MICRO-INTERACTIONS
+   Premium Empowering Women Theme
+   Complete Animation System
+   =========================================== */
+
+/* ===========================================
+   TABLE OF CONTENTS
+   ===========================================
+   1. Keyframe Animations
+   2. Scroll Reveal Animations
+   3. Hover Micro-Interactions
+   4. Button Animations
+   5. Card Animations
+   6. Loading Animations
+   7. Entrance Animations
+   8. Counter Animations
+   9. Pulse & Glow Effects
+   10. Parallax & Float Effects
+   11. Modal & Popup Animations
+   12. Navigation Animations
+   13. Form Animations
+   14. Gallery Animations
+   15. Accessibility (Reduced Motion)
+   =========================================== */
+
+/* ===========================================
+   1. KEYFRAME ANIMATIONS
+   =========================================== */
+
+/* Float Animation (Hero Image) */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Pulse Animation (Call-to-Action) */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+/* Glow Animation (Important Elements) */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(194, 24, 91, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(194, 24, 91, 0.6);
+    }
+}
+
+/* Spin Animation (Loaders) */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Bounce Animation (Icons) */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Shake Animation (Error States) */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Down Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Left Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade In Right Animation */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Zoom Out Animation */
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Slide In From Left */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Slide Out To Right */
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Rotate In Animation */
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+/* Scale Pulse Animation */
+@keyframes scalePulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Gradient Shift Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Shimmer Animation (Loading Skeleton) */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Ripple Animation (Button Click) */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Progress Bar Fill */
+@keyframes progressFill {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    10%, 30% {
+        transform: scale(1.1);
+    }
+    20%, 40% {
+        transform: scale(1);
+    }
+}
+
+/* Wave Animation */
+@keyframes wave {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Flip Animation */
+@keyframes flip {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+/* ===========================================
+   2. SCROLL REVEAL ANIMATIONS
+   =========================================== */
+
+/* Base Scroll Animation Styles */
+[data-animate] {
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Fade Up Variant */
+[data-animate="fade-up"] {
+    transform: translateY(60px);
+}
+
+[data-animate="fade-up"].animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade Down Variant */
+[data-animate="fade-down"] {
+    transform: translateY(-60px);
+}
+
+[data-animate="fade-down"].animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade Left Variant */
+[data-animate="fade-left"] {
+    transform: translateX(60px);
+}
+
+[data-animate="fade-left"].animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Fade Right Variant */
+[data-animate="fade-right"] {
+    transform: translateX(-60px);
+}
+
+[data-animate="fade-right"].animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Zoom In Variant */
+[data-animate="zoom-in"] {
+    transform: scale(0.85);
+}
+
+[data-animate="zoom-in"].animated {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Zoom Out Variant */
+[data-animate="zoom-out"] {
+    transform: scale(1.15);
+}
+
+[data-animate="zoom-out"].animated {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Rotate In Variant */
+[data-animate="rotate-in"] {
+    transform: rotate(-15deg);
+}
+
+[data-animate="rotate-in"].animated {
+    opacity: 1;
+    transform: rotate(0);
+}
+
+/* Animation Delays */
+[data-delay="100"].animated {
+    transition-delay: 0.1s;
+}
+
+[data-delay="200"].animated {
+    transition-delay: 0.2s;
+}
+
+[data-delay="300"].animated {
+    transition-delay: 0.3s;
+}
+
+[data-delay="400"].animated {
+    transition-delay: 0.4s;
+}
+
+[data-delay="500"].animated {
+    transition-delay: 0.5s;
+}
+
+[data-delay="600"].animated {
+    transition-delay: 0.6s;
+}
+
+/* ===========================================
+   3. HOVER MICRO-INTERACTIONS
+   =========================================== */
+
+/* Lift on Hover */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+}
+
+/* Scale on Hover */
+.hover-scale {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Glow on Hover */
+.hover-glow {
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-glow:hover {
+    box-shadow: 0 8px 30px rgba(194, 24, 91, 0.4);
+}
+
+/* Rotate on Hover */
+.hover-rotate {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-rotate:hover {
+    transform: rotate(5deg);
+}
+
+/* Shine Effect on Hover */
+.hover-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-shine:hover::before {
+    left: 100%;
+}
+
+/* Underline on Hover */
+.hover-underline {
+    position: relative;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-empowerment);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+/* ===========================================
+   4. BUTTON ANIMATIONS
+   =========================================== */
+
+/* Button Ripple Effect */
+.btn-ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-ripple:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Button Arrow Slide */
+.btn-arrow {
+    position: relative;
+    padding-right: 50px;
+}
+
+.btn-arrow::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-arrow:hover::after {
+    right: 15px;
+}
+
+/* Button Gradient Animation */
+.btn-gradient-animate {
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+}
+
+/* ===========================================
+   5. CARD ANIMATIONS
+   =========================================== */
+
+/* Card Tilt Effect (3D) */
+.card-tilt {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.card-tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+
+/* Card Expand on Hover */
+.card-expand {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-expand:hover {
+    transform: scale(1.03);
+    z-index: 10;
+}
+
+/* Card Flip Animation */
+.card-flip {
+    perspective: 1000px;
+}
+
+.card-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-flip:hover .card-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.card-flip-front,
+.card-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-flip-back {
+    transform: rotateY(180deg);
+}
+
+/* ===========================================
+   6. LOADING ANIMATIONS
+   =========================================== */
+
+/* Spinner Loader */
+.loader-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(194, 24, 91, 0.1);
+    border-top-color: var(--primary-empowerment);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* Dots Loader */
+.loader-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.loader-dots span {
+    width: 12px;
+    height: 12px;
+    background: var(--primary-empowerment);
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.loader-dots span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.loader-dots span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+/* Progress Bar Loader */
+.loader-progress {
+    width: 100%;
+    height: 4px;
+    background: rgba(194, 24, 91, 0.1);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.loader-progress-bar {
+    width: 0;
+    height: 100%;
+    background: var(--gradient-primary);
+    animation: progressFill 2s ease-in-out infinite;
+}
+
+/* Skeleton Loading */
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        #f0f0f0 25%,
+        #e0e0e0 50%,
+        #f0f0f0 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+    border-radius: 8px;
+}
+
+/* ===========================================
+   7. ENTRANCE ANIMATIONS
+   =========================================== */
+
+/* Stagger Children Animation */
+.stagger-children > * {
+    animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Page Load Animation */
+.page-enter {
+    animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Section Reveal */
+.section-reveal {
+    animation: fadeInUp 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===========================================
+   8. COUNTER ANIMATIONS
+   =========================================== */
+
+/* Counter Number Animation (Applied via JS) */
+.counter-animate {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.counter-increment {
+    animation: scalePulse 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===========================================
+   9. PULSE & GLOW EFFECTS
+   =========================================== */
+
+/* Pulse Continuously */
+.pulse-continuous {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Glow Continuously */
+.glow-continuous {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Heartbeat Effect */
+.heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+/* Notification Badge Pulse */
+.badge-pulse {
+    position: relative;
+}
+
+.badge-pulse::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: inherit;
+    animation: pulse 2s infinite;
+    z-index: -1;
+}
+
+/* ===========================================
+   10. PARALLAX & FLOAT EFFECTS
+   =========================================== */
+
+/* Float Animation */
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-slow {
+    animation: float 8s ease-in-out infinite;
+}
+
+.float-fast {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Parallax Layer */
+.parallax-layer {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scroll-based animations (applied via JS) */
+.parallax-slow {
+    will-change: transform;
+}
+
+.parallax-medium {
+    will-change: transform;
+}
+
+.parallax-fast {
+    will-change: transform;
+}
+
+/* ===========================================
+   11. MODAL & POPUP ANIMATIONS
+   =========================================== */
+
+/* Modal Fade In */
+.modal-enter {
+    animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-exit {
+    animation: fadeOut 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Modal Scale */
+.modal-scale-enter {
+    animation: zoomIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-scale-exit {
+    animation: zoomOut 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Slide Up Modal */
+.modal-slide-enter {
+    animation: slideUpModal 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUpModal {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* ===========================================
+   12. NAVIGATION ANIMATIONS
+   =========================================== */
+
+/* Mobile Menu Slide */
+.nav-slide-enter {
+    animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-slide-exit {
+    animation: slideOutRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Nav Link Underline Animation */
+.nav-link-animated {
+    position: relative;
+}
+
+.nav-link-animated::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--primary-empowerment);
+    transform: translateX(-50%);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link-animated:hover::after,
+.nav-link-animated.active::after {
+    width: 100%;
+}
+
+/* Dropdown Menu Animation */
+.dropdown-enter {
+    animation: fadeInDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===========================================
+   13. FORM ANIMATIONS
+   =========================================== */
+
+/* Input Focus Animation */
+.input-animated {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-animated:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(194, 24, 91, 0.2);
+}
+
+/* Label Float Animation */
+.input-group {
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    color: #999;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 12px;
+    font-size: 12px;
+    color: var(--primary-empowerment);
+    background: white;
+    padding: 0 4px;
+}
+
+/* Checkbox Check Animation */
+.checkbox-animated {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-animated:checked {
+    animation: scalePulse 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Form Submit Success */
+.form-success {
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Form Error Shake */
+.form-error {
+    animation: shake 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===========================================
+   14. GALLERY ANIMATIONS
+   =========================================== */
+
+/* Gallery Item Reveal */
+.gallery-item-reveal {
+    opacity: 0;
+    animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.gallery-item-reveal:nth-child(1) { animation-delay: 0.1s; }
+.gallery-item-reveal:nth-child(2) { animation-delay: 0.2s; }
+.gallery-item-reveal:nth-child(3) { animation-delay: 0.3s; }
+.gallery-item-reveal:nth-child(4) { animation-delay: 0.4s; }
+.gallery-item-reveal:nth-child(5) { animation-delay: 0.5s; }
+.gallery-item-reveal:nth-child(6) { animation-delay: 0.6s; }
+
+/* Lightbox Zoom */
+.lightbox-zoom-enter {
+    animation: zoomIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lightbox-zoom-exit {
+    animation: zoomOut 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Image Hover Zoom */
+.image-zoom-hover {
+    overflow: hidden;
+}
+
+.image-zoom-hover img {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-zoom-hover:hover img {
+    transform: scale(1.15);
+}
+
+/* ===========================================
+   15. ACCESSIBILITY (REDUCED MOTION)
+   =========================================== */
+
+/* Respect User's Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .float-animation,
+    .pulse-continuous,
+    .glow-continuous,
+    .heartbeat,
+    .loader-spinner,
+    .loader-dots,
+    .shimmer {
+        animation: none !important;
+    }
+}
+
+/* ===========================================
+   UTILITY ANIMATION CLASSES
+   =========================================== */
+
+/* Quick Animation Helpers */
+.animate-fast {
+    animation-duration: 0.3s !important;
+}
+
+.animate-slow {
+    animation-duration: 1s !important;
+}
+
+.animate-delay-1 {
+    animation-delay: 0.1s !important;
+}
+
+.animate-delay-2 {
+    animation-delay: 0.2s !important;
+}
+
+.animate-delay-3 {
+    animation-delay: 0.3s !important;
+}
+
+/* Infinite Animations */
+.animate-infinite {
+    animation-iteration-count: infinite !important;
+}
+
+/* Paused State */
+.animate-paused {
+    animation-play-state: paused !important;
+}
+
+/* ===========================================
+   PERFORMANCE OPTIMIZATION
+   =========================================== */
+
+/* GPU Acceleration for Smooth Animations */
+.gpu-accelerate {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    will-change: transform, opacity;
+}
+
+/* Optimize Expensive Properties */
+.optimize-animation {
+    will-change: transform, opacity;
+}
+
+.optimize-animation.complete {
+    will-change: auto;
+}
+</file>
+
+<file path="css/config.css">
+/* ===========================================
+   HROAI - DESIGN SYSTEM CONFIGURATION
+   Premium Empowering Women Theme
+   Version: 2.0 - Enhanced & Complete
+   =========================================== */
+
+/* ===========================================
+   GOOGLE FONTS IMPORT
+   =========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================================
+   CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   =========================================== */
+:root {
+    
+    /* ===== PRIMARY BRAND COLORS ===== */
+    --primary-empowerment: #C2185B;        /* Deep Pink - Strength & Femininity */
+    --primary-empowerment-light: #E91E63;  /* Lighter shade */
+    --primary-empowerment-dark: #880E4F;   /* Darker shade */
+    
+    --primary-justice: #1565C0;            /* Royal Blue - Trust & Authority */
+    --primary-justice-light: #1976D2;      /* Lighter shade */
+    --primary-justice-dark: #0D47A1;       /* Darker shade */
+    
+    --primary-hope: #FFA726;               /* Warm Orange - Optimism & Energy */
+    --primary-hope-light: #FFB74D;         /* Lighter shade */
+    --primary-hope-dark: #F57C00;          /* Darker shade */
+    
+    --primary-success: #00897B;            /* Teal - Growth & Balance */
+    --primary-success-light: #26A69A;      /* Lighter shade */
+    --primary-success-dark: #00695C;       /* Darker shade */
+    
+    /* ===== SECONDARY COLORS ===== */
+    --secondary-purple: #7B1FA2;           /* Deep Purple - Dignity & Wisdom */
+    --secondary-purple-light: #9C27B0;     /* Lighter shade */
+    --secondary-purple-dark: #4A148C;      /* Darker shade */
+    
+    --secondary-rose: #EC407A;             /* Rose - Compassion & Warmth */
+    --secondary-rose-light: #F06292;       /* Lighter shade */
+    --secondary-rose-dark: #C2185B;        /* Darker shade */
+    
+    --secondary-teal: #00897B;             /* Teal - Balance & Healing */
+    --secondary-teal-light: #26A69A;       /* Lighter shade */
+    --secondary-teal-dark: #00695C;        /* Darker shade */
+    
+    --secondary-indigo: #3949AB;           /* Indigo - Integrity & Depth */
+    --secondary-indigo-light: #5C6BC0;     /* Lighter shade */
+    --secondary-indigo-dark: #283593;      /* Darker shade */
+    
+    /* ===== NEUTRAL COLORS (Gray Scale) ===== */
+    --neutral-50: #FAFAFA;
+    --neutral-100: #F5F5F5;
+    --neutral-200: #EEEEEE;
+    --neutral-300: #E0E0E0;
+    --neutral-400: #BDBDBD;
+    --neutral-500: #9E9E9E;
+    --neutral-600: #757575;
+    --neutral-700: #616161;
+    --neutral-800: #424242;
+    --neutral-900: #212121;
+    --white: #FFFFFF;
+    --black: #000000;
+    
+    /* ===== SEMANTIC COLORS (Feedback States) ===== */
+    --color-success: #4CAF50;
+    --color-success-light: #81C784;
+    --color-success-dark: #388E3C;
+    
+    --color-warning: #FF9800;
+    --color-warning-light: #FFB74D;
+    --color-warning-dark: #F57C00;
+    
+    --color-error: #F44336;
+    --color-error-light: #E57373;
+    --color-error-dark: #D32F2F;
+    
+    --color-info: #2196F3;
+    --color-info-light: #64B5F6;
+    --color-info-dark: #1976D2;
+    
+    /* ===== GRADIENT COLLECTIONS ===== */
+    
+    /* Primary Gradients */
+    --gradient-primary: linear-gradient(135deg, #C2185B 0%, #7B1FA2 100%);
+    --gradient-primary-reverse: linear-gradient(135deg, #7B1FA2 0%, #C2185B 100%);
+    --gradient-primary-soft: linear-gradient(135deg, rgba(194, 24, 91, 0.8) 0%, rgba(123, 31, 162, 0.8) 100%);
+    
+    /* Secondary Gradients */
+    --gradient-secondary: linear-gradient(145deg, #EC407A 0%, #FFA726 100%);
+    --gradient-secondary-reverse: linear-gradient(145deg, #FFA726 0%, #EC407A 100%);
+    
+    /* Hero & Overlay Gradients */
+    --gradient-hero: linear-gradient(135deg, rgba(194, 24, 91, 0.95) 0%, rgba(123, 31, 162, 0.9) 100%);
+    --gradient-hero-alt: linear-gradient(135deg, rgba(21, 101, 192, 0.95) 0%, rgba(57, 73, 171, 0.9) 100%);
+    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    --gradient-overlay-light: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+    
+    /* Card & Background Gradients */
+    --gradient-card: linear-gradient(145deg, rgba(236, 64, 122, 0.1) 0%, rgba(255, 167, 38, 0.1) 100%);
+    --gradient-card-hover: linear-gradient(145deg, rgba(236, 64, 122, 0.2) 0%, rgba(255, 167, 38, 0.2) 100%);
+    --gradient-light: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 100%);
+    --gradient-subtle: linear-gradient(135deg, rgba(194, 24, 91, 0.05) 0%, rgba(123, 31, 162, 0.05) 100%);
+    
+    /* Multi-color Gradients */
+    --gradient-rainbow: linear-gradient(135deg, #C2185B 0%, #7B1FA2 25%, #3949AB 50%, #1565C0 75%, #00897B 100%);
+    --gradient-sunset: linear-gradient(135deg, #FFA726 0%, #EC407A 50%, #7B1FA2 100%);
+    --gradient-ocean: linear-gradient(135deg, #00897B 0%, #1565C0 50%, #3949AB 100%);
+    
+    /* ===== TYPOGRAPHY ===== */
+    
+    /* Font Families */
+    --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    --font-mono: 'Courier New', Courier, monospace;
+    
+    /* Font Sizes (Fluid Typography - Scales with Viewport) */
+    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);      /* 12px - 14px */
+    --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);         /* 14px - 16px */
+    --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);      /* 16px - 18px */
+    --text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);        /* 18px - 22px */
+    --text-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.75rem);       /* 20px - 28px */
+    --text-2xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);       /* 24px - 36px */
+    --text-3xl: clamp(2rem, 1.5rem + 2vw, 3.5rem);             /* 32px - 56px */
+    --text-4xl: clamp(2.5rem, 2rem + 2.5vw, 4.5rem);           /* 40px - 72px */
+    --text-5xl: clamp(3rem, 2.5rem + 3vw, 6rem);               /* 48px - 96px */
+    
+    /* Font Weights */
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-extrabold: 800;
+    --weight-black: 900;
+    
+    /* Line Heights */
+    --leading-none: 1;
+    --leading-tight: 1.2;
+    --leading-snug: 1.4;
+    --leading-normal: 1.6;
+    --leading-relaxed: 1.8;
+    --leading-loose: 2;
+    
+    /* Letter Spacing */
+    --tracking-tighter: -0.05em;
+    --tracking-tight: -0.025em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
+    
+    /* ===== SPACING SYSTEM (Based on 4px Grid) ===== */
+    --space-0: 0;
+    --space-px: 1px;
+    --space-0-5: 0.125rem;   /* 2px */
+    --space-1: 0.25rem;      /* 4px */
+    --space-1-5: 0.375rem;   /* 6px */
+    --space-2: 0.5rem;       /* 8px */
+    --space-2-5: 0.625rem;   /* 10px */
+    --space-3: 0.75rem;      /* 12px */
+    --space-3-5: 0.875rem;   /* 14px */
+    --space-4: 1rem;         /* 16px */
+    --space-5: 1.25rem;      /* 20px */
+    --space-6: 1.5rem;       /* 24px */
+    --space-7: 1.75rem;      /* 28px */
+    --space-8: 2rem;         /* 32px */
+    --space-9: 2.25rem;      /* 36px */
+    --space-10: 2.5rem;      /* 40px */
+    --space-11: 2.75rem;     /* 44px */
+    --space-12: 3rem;        /* 48px */
+    --space-14: 3.5rem;      /* 56px */
+    --space-16: 4rem;        /* 64px */
+    --space-18: 4.5rem;      /* 72px */
+    --space-20: 5rem;        /* 80px */
+    --space-24: 6rem;        /* 96px */
+    --space-28: 7rem;        /* 112px */
+    --space-32: 8rem;        /* 128px */
+    --space-36: 9rem;        /* 144px */
+    --space-40: 10rem;       /* 160px */
+    --space-48: 12rem;       /* 192px */
+    --space-56: 14rem;       /* 224px */
+    --space-64: 16rem;       /* 256px */
+    
+    /* ===== CONTAINER WIDTHS ===== */
+    --container-xs: 480px;
+    --container-sm: 640px;
+    --container-md: 768px;
+    --container-lg: 1024px;
+    --container-xl: 1200px;
+    --container-2xl: 1400px;
+    --container-3xl: 1600px;
+    --container-full: 100%;
+    
+    /* ===== BORDER RADIUS ===== */
+    --radius-none: 0;
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-2xl: 32px;
+    --radius-3xl: 48px;
+    --radius-full: 9999px;
+    
+    /* ===== BORDER WIDTH ===== */
+    --border-0: 0;
+    --border-1: 1px;
+    --border-2: 2px;
+    --border-4: 4px;
+    --border-8: 8px;
+    
+    /* ===== SHADOWS (Elevation System) ===== */
+    
+    /* Standard Shadows */
+    --shadow-none: none;
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
+    --shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.2);
+    --shadow-3xl: 0 32px 80px rgba(0, 0, 0, 0.25);
+    --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+    
+    /* Colored Shadows (Brand Colors) */
+    --shadow-pink: 0 8px 24px rgba(194, 24, 91, 0.25);
+    --shadow-pink-lg: 0 16px 48px rgba(194, 24, 91, 0.3);
+    --shadow-pink-xl: 0 24px 64px rgba(194, 24, 91, 0.35);
+    
+    --shadow-blue: 0 8px 24px rgba(21, 101, 192, 0.25);
+    --shadow-blue-lg: 0 16px 48px rgba(21, 101, 192, 0.3);
+    --shadow-blue-xl: 0 24px 64px rgba(21, 101, 192, 0.35);
+    
+    --shadow-orange: 0 8px 24px rgba(255, 167, 38, 0.25);
+    --shadow-orange-lg: 0 16px 48px rgba(255, 167, 38, 0.3);
+    
+    --shadow-purple: 0 8px 24px rgba(123, 31, 162, 0.25);
+    --shadow-purple-lg: 0 16px 48px rgba(123, 31, 162, 0.3);
+    
+    --shadow-teal: 0 8px 24px rgba(0, 137, 123, 0.25);
+    
+    /* ===== Z-INDEX SYSTEM ===== */
+    --z-base: 1;
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+    --z-notification: 1080;
+    --z-max: 9999;
+    
+    /* ===== TRANSITIONS & ANIMATIONS ===== */
+    
+    /* Duration */
+    --duration-instant: 0ms;
+    --duration-fast: 150ms;
+    --duration-base: 250ms;
+    --duration-slow: 350ms;
+    --duration-slower: 500ms;
+    --duration-slowest: 750ms;
+    
+    /* Easing Functions */
+    --ease-linear: linear;
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    /* Combined Transition Properties */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slower: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-all: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* ===== OPACITY ===== */
+    --opacity-0: 0;
+    --opacity-10: 0.1;
+    --opacity-20: 0.2;
+    --opacity-30: 0.3;
+    --opacity-40: 0.4;
+    --opacity-50: 0.5;
+    --opacity-60: 0.6;
+    --opacity-70: 0.7;
+    --opacity-80: 0.8;
+    --opacity-90: 0.9;
+    --opacity-100: 1;
+    
+    /* ===== BREAKPOINTS (For JavaScript Reference) ===== */
+    --breakpoint-xs: 480px;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-2xl: 1400px;
+    --breakpoint-3xl: 1600px;
+    
+    /* ===== BLUR EFFECTS ===== */
+    --blur-none: 0;
+    --blur-sm: 4px;
+    --blur-md: 8px;
+    --blur-lg: 16px;
+    --blur-xl: 24px;
+    --blur-2xl: 40px;
+    --blur-3xl: 64px;
+    
+    /* ===== ASPECT RATIOS ===== */
+    --aspect-square: 1 / 1;
+    --aspect-video: 16 / 9;
+    --aspect-portrait: 3 / 4;
+    --aspect-landscape: 4 / 3;
+    --aspect-ultrawide: 21 / 9;
+    
+    /* ===== FORM ELEMENTS ===== */
+    --input-height: 48px;
+    --input-padding-x: 16px;
+    --input-padding-y: 12px;
+    --input-border-color: var(--neutral-300);
+    --input-border-focus: var(--primary-empowerment);
+    --input-bg: var(--white);
+    --input-bg-disabled: var(--neutral-100);
+    
+    /* ===== BUTTON SIZES ===== */
+    --btn-height-sm: 36px;
+    --btn-height-md: 44px;
+    --btn-height-lg: 52px;
+    --btn-height-xl: 60px;
+    --btn-padding-x-sm: 16px;
+    --btn-padding-x-md: 24px;
+    --btn-padding-x-lg: 32px;
+    --btn-padding-x-xl: 40px;
+}
+
+/* ===========================================
+   DARK MODE SUPPORT (Optional - Future Enhancement)
+   =========================================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Uncomment and customize for dark mode */
+        /* --neutral-50: #1a1a1a; */
+        /* --neutral-100: #2a2a2a; */
+        /* --white: #1a1a1a; */
+        /* --black: #ffffff; */
+    }
+}
+
+/* ===========================================
+   REDUCED MOTION (Accessibility)
+   =========================================== */
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --duration-fast: 0ms;
+        --duration-base: 0ms;
+        --duration-slow: 0ms;
+        --duration-slower: 0ms;
+        --duration-slowest: 0ms;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===========================================
+   HIGH CONTRAST MODE (Accessibility)
+   =========================================== */
+@media (prefers-contrast: high) {
+    :root {
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+        --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* ===========================================
+   PRINT STYLES
+   =========================================== */
+@media print {
+    :root {
+        --shadow-md: none;
+        --shadow-lg: none;
+        --shadow-xl: none;
+        --gradient-primary: var(--primary-empowerment);
+        --gradient-secondary: var(--secondary-rose);
+    }
+}
+</file>
+
+<file path="css/style.css">
+/* ===========================================
+   HROAI - MAIN STYLESHEET
+   Premium Empowering Women Theme
+   Complete CSS for All Sections
+   =========================================== */
+
+/* ===========================================
+   TABLE OF CONTENTS
+   ===========================================
+   1. Base & Reset
+   2. Typography
+   3. Containers & Layout
+   4. Header & Navigation
+   5. Hero Section
+   6. Stats Section
+   7. About Section
+   8. Services Section
+   9. Process Section
+   10. Testimonials Section
+   11. Achievements Section
+   12. Performance Section
+   13. Team Section
+   14. Gallery Section
+   15. Blog Section
+   16. FAQ Section
+   17. Contact Section
+   18. Footer
+   19. Support Popup
+   20. Components (Buttons, Cards, Forms)
+   21. Utility Classes
+   =========================================== */
+
+/* ===========================================
+   1. BASE & RESET
+   =========================================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    color: var(--neutral-800);
+    background: var(--neutral-50);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-base);
+}
+
+a:hover {
+    color: var(--primary-empowerment);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: var(--transition-base);
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Selection Color */
+::selection {
+    background: var(--primary-empowerment);
+    color: var(--white);
+}
+
+::-moz-selection {
+    background: var(--primary-empowerment);
+    color: var(--white);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-empowerment-dark);
+}
+
+/* ===========================================
+   2. TYPOGRAPHY
+   =========================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--weight-bold);
+    line-height: var(--leading-tight);
+    color: var(--neutral-900);
+    margin-bottom: var(--space-4);
+}
+
+h1 {
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-black);
+    letter-spacing: var(--tracking-tight);
+}
+
+h2 {
+    font-size: var(--text-3xl);
+    font-weight: var(--weight-extrabold);
+}
+
+h3 {
+    font-size: var(--text-2xl);
+    font-weight: var(--weight-bold);
+}
+
+h4 {
+    font-size: var(--text-xl);
+    font-weight: var(--weight-semibold);
+}
+
+h5 {
+    font-size: var(--text-lg);
+    font-weight: var(--weight-semibold);
+}
+
+h6 {
+    font-size: var(--text-base);
+    font-weight: var(--weight-semibold);
+}
+
+p {
+    margin-bottom: var(--space-4);
+    line-height: var(--leading-relaxed);
+}
+
+strong, b {
+    font-weight: var(--weight-bold);
+}
+
+em, i {
+    font-style: italic;
+}
+
+.text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-large {
+    font-size: var(--text-lg);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===========================================
+   3. CONTAINERS & LAYOUT
+   =========================================== */
+.container {
+    width: 100%;
+    max-width: var(--container-2xl);
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 5vw, 3rem);
+}
+
+.container-narrow {
+    max-width: var(--container-xl);
+}
+
+.container-wide {
+    max-width: var(--container-3xl);
+}
+
+.section {
+    padding: var(--space-24) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-sm {
+    padding: var(--space-16) 0;
+}
+
+.section-lg {
+    padding: var(--space-32) 0;
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-16);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    font-size: var(--text-3xl);
+    font-weight: var(--weight-extrabold);
+    margin-bottom: var(--space-4);
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+}
+
+.section-subtitle {
+    font-size: var(--text-lg);
+    color: var(--neutral-600);
+    margin-top: var(--space-6);
+    line-height: var(--leading-relaxed);
+}
+
+/* Bento Grid System */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+}
+
+.bento-grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.bento-grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.bento-grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.bento-item {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    padding: var(--space-8);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.bento-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.bento-item-featured {
+    grid-column: span 2;
+}
+
+.bento-item-tall {
+    grid-row: span 2;
+}
+
+/* ===========================================
+   4. HEADER & NAVIGATION
+   =========================================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+    z-index: var(--z-sticky);
+    transition: var(--transition-base);
+}
+
+.header.scrolled {
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(var(--blur-md));
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    color: var(--primary-empowerment);
+    transition: var(--transition-base);
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: var(--transition-base);
+}
+
+.header.scrolled .logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+}
+
+.nav-link {
+    font-weight: var(--weight-medium);
+    color: var(--neutral-700);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    position: relative;
+    transition: var(--transition-base);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    transition: var(--transition-base);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-empowerment);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: var(--z-modal);
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-empowerment);
+    border-radius: var(--radius-full);
+    transition: var(--transition-base);
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+/* ===========================================
+   5. HERO SECTION
+   =========================================== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: var(--gradient-primary);
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    align-items: center;
+}
+
+.hero-text {
+    color: var(--white);
+}
+
+.hero-title {
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-black);
+    color: var(--white);
+    margin-bottom: var(--space-6);
+    line-height: var(--leading-tight);
+}
+
+.hero-subtitle {
+    font-size: var(--text-xl);
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: var(--space-8);
+    line-height: var(--leading-relaxed);
+}
+
+.hero-cta {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-2xl);
+    margin-left: auto;
+}
+
+.hero-decorative {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(80px);
+    pointer-events: none;
+}
+
+.hero-decorative:nth-child(1) {
+    top: 10%;
+    left: 5%;
+}
+
+.hero-decorative:nth-child(2) {
+    bottom: 15%;
+    right: 10%;
+}
+
+/* ===========================================
+   6. STATS SECTION
+   =========================================== */
+.stats {
+    padding: var(--space-20) 0;
+    background: var(--neutral-100);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8);
+}
+
+.stat-card {
+    background: var(--white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-pink);
+}
+
+.stat-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--space-4);
+    background: var(--gradient-card);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.stat-number {
+    font-size: var(--text-3xl);
+    font-weight: var(--weight-black);
+    color: var(--primary-empowerment);
+    margin-bottom: var(--space-2);
+}
+
+.stat-label {
+    font-size: var(--text-base);
+    color: var(--neutral-600);
+    font-weight: var(--weight-medium);
+}
+
+/* ===========================================
+   7. ABOUT SECTION
+   =========================================== */
+.about {
+    padding: var(--space-24) 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 200px;
+    height: 200px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-2xl);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.about-text h2 {
+    color: var(--primary-empowerment);
+    margin-bottom: var(--space-6);
+}
+
+.about-text p {
+    font-size: var(--text-lg);
+    color: var(--neutral-700);
+    margin-bottom: var(--space-6);
+}
+
+.about-features {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: var(--space-8);
+}
+
+.about-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding: var(--space-4);
+    background: var(--gradient-light);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--primary-empowerment);
+    transition: var(--transition-base);
+}
+
+.about-feature:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+}
+
+.about-feature-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.about-feature-text h4 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+    color: var(--neutral-900);
+}
+
+.about-feature-text p {
+    font-size: var(--text-base);
+    color: var(--neutral-600);
+    margin: 0;
+}
+
+/* ===========================================
+   8. SERVICES SECTION
+   =========================================== */
+.services {
+    padding: var(--space-24) 0;
+    background: var(--neutral-100);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-6);
+}
+
+.service-card {
+    background: var(--white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    position: relative;
+    overflow: hidden;
+    border-top: 4px solid transparent;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-card);
+    opacity: 0;
+    transition: var(--transition-base);
+    z-index: 0;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: var(--shadow-pink-lg);
+    border-top-color: var(--primary-empowerment);
+}
+
+.service-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.service-icon {
+    width: 72px;
+    height: 72px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: var(--space-6);
+    box-shadow: var(--shadow-pink);
+    transition: var(--transition-base);
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.service-title {
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    margin-bottom: var(--space-4);
+    color: var(--neutral-900);
+}
+
+.service-description {
+    font-size: var(--text-base);
+    color: var(--neutral-600);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+}
+
+.service-list {
+    list-style: none;
+    margin-bottom: var(--space-6);
+}
+
+.service-list li {
+    padding: var(--space-2) 0;
+    padding-left: var(--space-6);
+    position: relative;
+    color: var(--neutral-700);
+    font-size: var(--text-sm);
+}
+
+.service-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-empowerment);
+    font-weight: var(--weight-bold);
+}
+
+/* Featured Service Card */
+.service-card-featured {
+    grid-column: span 2;
+    background: var(--gradient-primary);
+    color: var(--white);
+}
+
+.service-card-featured .service-title,
+.service-card-featured .service-description,
+.service-card-featured .service-list li {
+    color: var(--white);
+}
+
+.service-card-featured .service-icon {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(var(--blur-md));
+}
+
+.service-card-featured::before {
+    display: none;
+}
+
+/* ===========================================
+   9. PROCESS SECTION
+   =========================================== */
+.process {
+    padding: var(--space-24) 0;
+    background: var(--white);
+}
+
+.process-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4);
+    position: relative;
+}
+
+.process-step {
+    text-align: center;
+    padding: var(--space-6);
+    position: relative;
+}
+
+.process-number {
+    position: absolute;
+    top: 0;
+    right: var(--space-4);
+    font-size: var(--text-3xl);
+    font-weight: var(--weight-black);
+    color: var(--gradient-primary);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.3;
+}
+
+.process-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto var(--space-6);
+    box-shadow: var(--shadow-pink);
+    transition: var(--transition-base);
+}
+
+.process-step:hover .process-icon {
+    transform: scale(1.15) rotate(10deg);
+}
+
+.process-title {
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    margin-bottom: var(--space-3);
+    color: var(--neutral-900);
+}
+
+.process-description {
+    font-size: var(--text-base);
+    color: var(--neutral-600);
+    line-height: var(--leading-relaxed);
+}
+
+.process-connector {
+    display: none;
+}
+
+/* ===========================================
+   10. TESTIMONIALS SECTION
+   =========================================== */
+.testimonials {
+    padding: var(--space-24) 0;
+    background: var(--neutral-100);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-6);
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    transition: var(--transition-base);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.testimonial-quote {
+    font-size: 80px;
+    line-height: 1;
+    color: var(--primary-empowerment);
+    opacity: 0.2;
+    font-family: Georgia, serif;
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-6);
+}
+
+.testimonial-text {
+    font-size: var(--text-lg);
+    color: var(--neutral-700);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+    padding-top: var(--space-8);
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    border: 3px solid var(--primary-empowerment);
+}
+
+.testimonial-info {
+}
+
+.testimonial-name {
+    font-size: var(--text-lg);
+    font-weight: var(--weight-bold);
+    color: var(--neutral-900);
+    margin-bottom: var(--space-1);
+}
+
+.testimonial-role {
+    font-size: var(--text-sm);
+    color: var(--neutral-600);
+}
+
+.testimonial-card-featured {
+    grid-column: span 2;
+    background: var(--gradient-card);
+}
+
+/* ===========================================
+   11. ACHIEVEMENTS SECTION
+   =========================================== */
+.achievements {
+    padding: var(--space-24) 0;
+    background: var(--white);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+}
+
+.achievement-card {
+    background: var(--white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition-base);
+    border-top: 4px solid var(--primary-hope);
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-orange-lg);
+}
+
+.achievement-icon {
+    font-size: 64px;
+    margin-bottom: var(--space-4);
+}
+
+.achievement-title {
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    color: var(--neutral-900);
+    margin-bottom: var(--space-3);
+}
+
+.achievement-date {
+    font-size: var(--text-sm);
+    color: var(--primary-empowerment);
+    font-weight: var(--weight-semibold);
+    margin-bottom: var(--space-3);
+}
+
+.achievement-description {
+    font-size: var(--text-base);
+    color: var(--neutral-600);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===========================================
+   12. PERFORMANCE SECTION
+   =========================================== */
+.performance {
+    padding: var(--space-24) 0;
+    background: var(--neutral-100);
+}
+
+.performance-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    align-items: center;
+}
+
+.performance-chart h3 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-8);
+    color: var(--neutral-900);
+}
+
+.chart-bars {
+    display: grid;
+    gap: var(--space-6);
+}
+
+.chart-bar {
+    position: relative;
+}
+
+.chart-bar-fill {
+    height: 48px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    padding: 0 var(--space-4);
+    color: var(--white);
+    font-weight: var(--weight-bold);
+    transition: width 1s var(--ease-out);
+    box-shadow: var(--shadow-md);
+}
+
+.chart-label {
+    display: block;
+    margin-top: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--neutral-700);
+    font-weight: var(--weight-medium);
+}
+
+.performance-highlights {
+    display: grid;
+    gap: var(--space-6);
+}
+
+.highlight-card {
+    background: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--primary-empowerment);
+    transition: var(--transition-base);
+}
+
+.highlight-card:hover {
+    transform: translateX(8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.highlight-card h4 {
+    font-size: var(--text-xl);
+    color: var(--primary-empowerment);
+    margin-bottom: var(--space-2);
+}
+
+.highlight-card p {
+    font-size: var(--text-base);
+    color: var(--neutral-600);
+    margin: 0;
+}
+
+/* ===========================================
+   13. TEAM SECTION
+   =========================================== */
+.team {
+    padding: var(--space-24) 0;
+    background: var(--white);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-8);
+}
+
+.team-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: var(--transition-base);
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.1);
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-overlay);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition-base);
+}
+
+.team-card:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-social {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    color: var(--primary-empowerment);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-base);
+    font-weight: var(--weight-bold);
+}
+
+.social-link:hover {
+    background: var(--primary-empowerment);
+    color: var(--white);
+    transform: scale(1.15);
+}
+
+.team-info {
+    padding: var(--space-6);
+}
+
+.team-name {
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    color: var(--neutral-900);
+    margin-bottom: var(--space-2);
+}
+
+.team-role {
+    font-size: var(--text-base);
+    color: var(--primary-empowerment);
+    font-weight: var(--weight-semibold);
+    margin-bottom: var(--space-4);
+}
+
+.team-credentials {
+    list-style: none;
+    margin-bottom: var(--space-4);
+}
+
+.team-credentials li {
+    font-size: var(--text-sm);
+    color: var(--neutral-600);
+    padding: var(--space-1) 0;
+    padding-left: var(--space-5);
+    position: relative;
+}
+
+.team-credentials li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-empowerment);
+}
+
+.team-bio {
+    font-size: var(--text-sm);
+    color: var(--neutral-600);
+    line-height: var(--leading-relaxed);
+}
+
+.team-card-featured {
+    grid-column: span 2;
+}
+
+.team-card-featured .team-image {
+    aspect-ratio: 16 / 9;
+}
+
+/* ===========================================
+   14. GALLERY SECTION
+   =========================================== */
+.gallery {
+    padding: var(--space-24) 0;
+    background: var(--neutral-100);
+}
+
+.gallery-filters {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-12);
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: var(--space-3) var(--space-6);
+    background: var(--white);
+    color: var(--neutral-700);
+    border: 2px solid var(--neutral-300);
+    border-radius: var(--radius-full);
+    font-weight: var(--weight-semibold);
+    transition: var(--transition-base);
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-4);
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 4 / 3;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-overlay);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition-base);
+    padding: var(--space-6);
+    text-align: center;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h4 {
+    color: var(--white);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+}
+
+.gallery-overlay p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--text-sm);
+    margin: 0;
+}
+
+.gallery-item-large {
+    grid-column: span 2;
+}
+
+.gallery-item-tall {
+    grid-row: span 2;
+}
+
+/* ===========================================
+   15. BLOG SECTION
+   =========================================== */
+.blog {
+    padding: var(--space-24) 0;
+    background: var(--white);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-12);
+}
+
+.blog-card {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: var(--transition-base);
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.blog-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.1);
+}
+
+.blog-category {
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-4);
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-bold);
+}
+
+.blog-content {
+    padding: var(--space-6);
+}
+
+.blog-title {
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    color: var(--neutral-900);
+    margin-bottom: var(--space-3);
+    line-height: var(--leading-tight);
+}
+
+.blog-meta {
+    display: flex;
+    gap: var(--space-4);
+    font-size: var(--text-sm);
+    color: var(--neutral-500);
+    margin-bottom: var(--space-4);
+}
+
+.blog-excerpt {
+    font-size: var(--text-base);
+    color: var(--neutral-600);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+}
+
+.blog-link {
+    color: var(--primary-empowerment);
+    font-weight: var(--weight-semibold);
+    transition: var(--transition-base);
+}
+
+.blog-link:hover {
+    color: var(--primary-empowerment-dark);
+}
+
+.blog-cta {
+    text-align: center;
+}
+
+/* ===========================================
+   16. FAQ SECTION
+   =========================================== */
+.faq {
+    padding: var(--space-24) 0;
+    background: var(--neutral-100);
+}
+
+.faq-list {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.faq-item {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: var(--transition-base);
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+    width: 100%;
+    padding: var(--space-6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    background: none;
+    border: none;
+    font-size: var(--text-lg);
+    font-weight: var(--weight-semibold);
+    color: var(--neutral-900);
+    cursor: pointer;
+    text-align: left;
+}
+
+.faq-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-xl);
+    flex-shrink: 0;
+    transition: var(--transition-base);
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s var(--ease-out);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-answer p {
+    padding: 0 var(--space-6) var(--space-6);
+    font-size: var(--text-base);
+    color: var(--neutral-600);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===========================================
+   17. CONTACT SECTION
+   =========================================== */
+.contact {
+    padding: var(--space-24) 0;
+    background: var(--white);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+}
+
+.contact-form-wrapper {
+    background: var(--white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-form {
+}
+
+.form-group {
+    margin-bottom: var(--space-6);
+}
+
+.form-group label {
+    display: block;
+    font-size: var(--text-base);
+    font-weight: var(--weight-semibold);
+    color: var(--neutral-900);
+    margin-bottom: var(--space-2);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid var(--neutral-300);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    color: var(--neutral-900);
+    background: var(--white);
+    transition: var(--transition-base);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-empowerment);
+    box-shadow: 0 0 0 3px rgba(194, 24, 91, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--neutral-600);
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.checkbox-label a {
+    color: var(--primary-empowerment);
+    text-decoration: underline;
+}
+
+.form-message {
+    margin-top: var(--space-4);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-medium);
+    display: none;
+}
+
+.form-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: block;
+}
+
+.form-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: block;
+}
+
+.contact-info-wrapper {
+}
+
+.contact-info-card {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-pink-lg);
+    margin-bottom: var(--space-6);
+}
+
+.contact-info-card h3 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-6);
+    color: var(--white);
+}
+
+.contact-info-item {
+    display: flex;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.contact-info-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.contact-info-text h4 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-2);
+    color: var(--white);
+}
+
+.contact-info-text a {
+    color: var(--white);
+    transition: var(--transition-base);
+}
+
+.contact-info-text a:hover {
+    opacity: 0.8;
+}
+
+.contact-info-text p {
+    font-size: var(--text-base);
+    color: rgba(255, 255, 255, 0.9);
+    line-height: var(--leading-relaxed);
+    margin: 0;
+}
+
+.contact-registration-info {
+    background: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-registration-info h4 {
+    font-size: var(--text-lg);
+    color: var(--neutral-900);
+    margin-bottom: var(--space-4);
+}
+
+.contact-registration-info ul {
+    list-style: none;
+}
+
+.contact-registration-info li {
+    padding: var(--space-2) 0;
+    font-size: var(--text-sm);
+    color: var(--neutral-600);
+}
+
+.contact-registration-info strong {
+    color: var(--primary-empowerment);
+}
+
+/* ===========================================
+   18. FOOTER
+   =========================================== */
+.footer {
+    background: linear-gradient(135deg, var(--neutral-900) 0%, var(--primary-empowerment-dark) 100%);
+    color: var(--white);
+    padding: var(--space-16) 0 var(--space-6);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-12);
+    margin-bottom: var(--space-12);
+}
+
+.footer-column {
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    margin-bottom: var(--space-4);
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-description {
+    font-size: var(--text-base);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+}
+
+.footer-social {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-base);
+    font-weight: var(--weight-bold);
+}
+
+.social-icon:hover {
+    background: var(--white);
+    color: var(--primary-empowerment);
+    transform: translateY(-4px);
+}
+
+.footer-title {
+    font-size: var(--text-lg);
+    font-weight: var(--weight-bold);
+    margin-bottom: var(--space-4);
+    color: var(--white);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-3);
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--text-base);
+    transition: var(--transition-base);
+}
+
+.footer-links a:hover {
+    color: var(--white);
+    padding-left: var(--space-2);
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.newsletter-form input {
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    font-size: var(--text-base);
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.newsletter-note {
+    font-size: var(--text-xs);
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: var(--space-2);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--space-6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+}
+
+.footer-legal {
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+    font-size: var(--text-sm);
+}
+
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-legal a:hover {
+    color: var(--white);
+}
+
+.footer-copyright {
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
+
+/* ===========================================
+   19. SUPPORT POPUP WIDGET
+   =========================================== */
+.support-popup {
+    position: fixed;
+    bottom: var(--space-8);
+    right: var(--space-8);
+    z-index: var(--z-popover);
+}
+
+.support-toggle {
+    width: 64px;
+    height: 64px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-pink-lg);
+    cursor: pointer;
+    transition: var(--transition-base);
+    border: none;
+}
+
+.support-toggle:hover {
+    transform: scale(1.1);
+}
+
+.support-icon {
+    font-size: 32px;
+}
+
+.support-close {
+    display: none;
+    font-size: 28px;
+}
+
+.support-popup.active .support-icon {
+    display: none;
+}
+
+.support-popup.active .support-close {
+    display: block;
+}
+
+.support-panel {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 320px;
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-2xl);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: var(--transition-base);
+}
+
+.support-popup.active .support-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.support-header {
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.support-header h4 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-1);
+    color: var(--white);
+}
+
+.support-header p {
+    font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.support-content {
+    padding: var(--space-4);
+}
+
+.support-option {
+    margin-bottom: var(--space-3);
+}
+
+.support-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-4);
+    background: var(--gradient-light);
+    border-radius: var(--radius-lg);
+    transition: var(--transition-base);
+    color: var(--neutral-900);
+}
+
+.support-link:hover {
+    background: var(--gradient-card);
+    transform: translateX(4px);
+}
+
+.support-link-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.support-link-text strong {
+    display: block;
+    font-size: var(--text-base);
+    margin-bottom: var(--space-1);
+    color: var(--neutral-900);
+}
+
+.support-link-text span {
+    font-size: var(--text-sm);
+    color: var(--neutral-600);
+}
+
+.support-footer {
+    background: var(--neutral-100);
+    padding: var(--space-4);
+    text-align: center;
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+.support-footer p {
+    font-size: var(--text-sm);
+    color: var(--color-error);
+    font-weight: var(--weight-semibold);
+    margin: 0;
+}
+
+/* ===========================================
+   20. COMPONENTS (BUTTONS, CARDS, FORMS)
+   =========================================== */
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-base);
+    font-weight: var(--weight-semibold);
+    font-family: var(--font-heading);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: var(--transition-base);
+    text-decoration: none;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    color: var(--white);
+    box-shadow: var(--shadow-pink);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-pink-lg);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--primary-empowerment);
+    border: 2px solid var(--primary-empowerment);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-empowerment);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--text-lg);
+}
+
+.btn-sm {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-loader {
+    display: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--white);
+    border-top-color: transparent;
+    border-radius: var(--radius-full);
+    animation: spin 0.6s linear infinite;
+}
+
+.btn.loading .btn-loader {
+    display: block;
+}
+
+.btn.loading span:first-child {
+    display: none;
+}
+
+/* ===========================================
+   21. UTILITY CLASSES
+   =========================================== */
+
+/* Display */
+.d-none { display: none; }
+.d-block { display: block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+
+/* Text Alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Margins */
+.mt-4 { margin-top: var(--space-4); }
+.mt-8 { margin-top: var(--space-8); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-8 { margin-bottom: var(--space-8); }
+
+/* Paddings */
+.p-4 { padding: var(--space-4); }
+.p-8 { padding: var(--space-8); }
+
+/* Visibility */
+.hidden { visibility: hidden; }
+.visible { visibility: visible; }
+
+/* Animations (will be triggered by JS) */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Data Attributes for Animation */
+[data-animate] {
+    opacity: 0;
+    transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+
+[data-animate="fade-up"] {
+    transform: translateY(40px);
+}
+
+[data-animate="fade-down"] {
+    transform: translateY(-40px);
+}
+
+[data-animate="fade-left"] {
+    transform: translateX(40px);
+}
+
+[data-animate="fade-right"] {
+    transform: translateX(-40px);
+}
+
+[data-animate="zoom-in"] {
+    transform: scale(0.9);
+}
+
+[data-animate].animated {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+</file>
+
+<file path="index.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Human Rights Organization All India - Empowering women, protecting rights, and providing justice solutions for family, financial, and social issues across India.">
+    <meta name="keywords" content="women rights, human rights, family disputes, financial help, missing persons, legal aid, women empowerment">
+    <meta name="author" content="Dr. Amireddy Rajani">
+    
+    <title>Dr. Amireddy Rajani - Human Rights Organization All India | Empowering Women</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <!-- ===========================================
+         1. HEADER & NAVIGATION
+         =========================================== -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#hero" class="logo">
+                <img src="assets/images/logo.svg" alt="HROAI Logo" class="logo-img">
+                <span>HROAI</span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list" id="navList">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#process" class="nav-link">How We Help</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <a href="#contact" class="btn btn-primary">Get Help Now</a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===========================================
+         2. HERO SECTION
+         =========================================== -->
+    <section class="hero section" id="hero">
+        <div class="hero-decorative"></div>
+        <div class="hero-decorative"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-animate="fade-up">
+                    <h1 class="hero-title">Empowering Women.<br>Protecting Rights.<br>Delivering Justice.</h1>
+                    <p class="hero-subtitle">Dr. Amireddy Rajani leads India's mission to resolve critical social issues affecting women and families. From family disputes to missing persons—we bring hope, justice, and unwavering support.</p>
+                    
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary btn-lg">Contact Us Today</a>
+                        <a href="#services" class="btn btn-secondary btn-lg">Our Services</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image" data-animate="fade-left">
+                    <img src="assets/images/dr-rajani.png" alt="Dr. Amireddy Rajani - National Women Chairman">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         3. IMPACT STATS SECTION
+         =========================================== -->
+    <section class="stats section-sm" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-animate="fade-up" data-delay="100">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">Cases Resolved</div>
+                </div>
+                
+                <div class="stat-card" data-animate="fade-up" data-delay="200">
+                    <div class="stat-icon">👩</div>
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Women Empowered</div>
+                </div>
+                
+                <div class="stat-card" data-animate="fade-up" data-delay="300">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-label">Awards Received</div>
+                </div>
+                
+                <div class="stat-card" data-animate="fade-up" data-delay="400">
+                    <div class="stat-icon">⚖️</div>
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">Success Rate %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         4. ABOUT / MISSION SECTION
+         =========================================== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-animate="fade-right">
+                    <img src="assets/images/about-mission.jpg" alt="Our Mission - Empowering Women">
+                </div>
+                
+                <div class="about-text" data-animate="fade-left">
+                    <h2>About Our Mission</h2>
+                    <p><strong>Dr. Amireddy Rajani</strong>, as the National Women Chairman and RTI National Women President, is dedicated to resolving critical social issues affecting women and families across India.</p>
+                    
+                    <p>Our organization focuses on family disputes, financial problems, missing persons cases, and human rights concerns with compassion, professionalism, and dedication.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">🛡️</div>
+                            <div class="about-feature-text">
+                                <h4>Protecting Human Rights</h4>
+                                <p>Legal aid and advocacy for victims of human rights violations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="about-feature-icon">💪</div>
+                            <div class="about-feature-text">
+                                <h4>Empowering Women</h4>
+                                <p>Education, support, and resources to help women stand strong.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="about-feature-icon">⚖️</div>
+                            <div class="about-feature-text">
+                                <h4>Delivering Justice</h4>
+                                <p>Effective solutions to family and community problems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Join Our Mission</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         5. SERVICES SECTION
+         =========================================== -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive support for every challenge you face</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Family Issues -->
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-icon">👨‍👩‍👧‍👦</div>
+                    <h3 class="service-title">Family Issues</h3>
+                    <p class="service-description">Resolving domestic disputes and protecting family welfare with care and expertise.</p>
+                    <ul class="service-list">
+                        <li>Domestic disputes and reconciliation</li>
+                        <li>Child custody and welfare</li>
+                        <li>Marriage and divorce support</li>
+                        <li>Protection against domestic violence</li>
+                    </ul>
+                </div>
+                
+                <!-- Financial Issues -->
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon">💰</div>
+                    <h3 class="service-title">Financial Issues</h3>
+                    <p class="service-description">Expert guidance on property, inheritance, and financial abuse cases.</p>
+                    <ul class="service-list">
+                        <li>Property and inheritance disputes</li>
+                        <li>Debt resolution and financial aid</li>
+                        <li>Financial abuse counseling</li>
+                        <li>Support for widows and single mothers</li>
+                    </ul>
+                </div>
+                
+                <!-- Missing Persons -->
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-icon">🔍</div>
+                    <h3 class="service-title">Missing Persons</h3>
+                    <p class="service-description">Dedicated search and recovery support for missing family members.</p>
+                    <ul class="service-list">
+                        <li>Search and recovery support</li>
+                        <li>Legal assistance in reporting</li>
+                        <li>Liaison with law enforcement</li>
+                        <li>Follow-up and family counseling</li>
+                    </ul>
+                </div>
+                
+                <!-- Human Rights -->
+                <div class="service-card service-card-featured" data-animate="fade-up" data-delay="400">
+                    <div class="service-icon">⚖️</div>
+                    <h3 class="service-title">Human Rights Advocacy</h3>
+                    <p class="service-description">Standing up for your fundamental rights and dignity with powerful legal support.</p>
+                    <ul class="service-list">
+                        <li>Legal aid for human rights violations</li>
+                        <li>Awareness and advocacy programs</li>
+                        <li>Support for gender equality initiatives</li>
+                        <li>Workshops and community education</li>
+                    </ul>
+                </div>
+                
+                <!-- Online Services -->
+                <div class="service-card" data-animate="fade-up" data-delay="500">
+                    <div class="service-icon">💻</div>
+                    <h3 class="service-title">Online Services</h3>
+                    <p class="service-description">Government documentation and digital support made simple.</p>
+                    <ul class="service-list">
+                        <li>Udyam (MSME) registration</li>
+                        <li>E-SHRAM Labour Cards</li>
+                        <li>PAN card applications</li>
+                        <li>Government pensions & welfare schemes</li>
+                    </ul>
+                </div>
+                
+                <!-- Legal Support -->
+                <div class="service-card" data-animate="fade-up" data-delay="600">
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title">Legal Support</h3>
+                    <p class="service-description">Complete legal literacy, counseling, and documentation assistance.</p>
+                    <ul class="service-list">
+                        <li>Legal literacy and counseling</li>
+                        <li>Help with government documentation</li>
+                        <li>Support for elderly and disabled women</li>
+                        <li>Police case assistance and inquiries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         6. PROCESS / HOW WE HELP SECTION
+         =========================================== -->
+    <section class="process section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How We Help You</h2>
+                <p class="section-subtitle">Our proven 4-step process to deliver justice and support</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step" data-animate="fade-up" data-delay="100">
+                    <div class="process-number">01</div>
+                    <div class="process-icon">📞</div>
+                    <h3 class="process-title">Contact Us</h3>
+                    <p class="process-description">Reach out via phone, email, or visit our office. Your privacy and safety are our priority.</p>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step" data-animate="fade-up" data-delay="200">
+                    <div class="process-number">02</div>
+                    <div class="process-icon">🔍</div>
+                    <h3 class="process-title">Case Assessment</h3>
+                    <p class="process-description">Our experts analyze your situation and develop a customized action plan.</p>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step" data-animate="fade-up" data-delay="300">
+                    <div class="process-number">03</div>
+                    <div class="process-icon">⚡</div>
+                    <h3 class="process-title">Take Action</h3>
+                    <p class="process-description">We execute the plan with legal support, counseling, and community resources.</p>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step" data-animate="fade-up" data-delay="400">
+                    <div class="process-number">04</div>
+                    <div class="process-icon">✅</div>
+                    <h3 class="process-title">Resolution</h3>
+                    <p class="process-description">Achieve justice and peace with ongoing follow-up support for lasting change.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         7. SUCCESS STORIES / TESTIMONIALS SECTION
+         =========================================== -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Success Stories</h2>
+                <p class="section-subtitle">Real voices. Real impact. Real change.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate="fade-up" data-delay="100">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Dr. Rajani helped me escape an abusive marriage and secure custody of my children. I finally feel safe and empowered.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/testimonial-1.jpg" alt="Anonymous" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Lakshmi S.</h4>
+                            <p class="testimonial-role">Family Dispute Resolution</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card testimonial-card-featured" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">When my daughter went missing, HROAI worked tirelessly with police to bring her home. I can never thank them enough.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/testimonial-2.jpg" alt="Anonymous" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Priya M.</h4>
+                            <p class="testimonial-role">Missing Person Case</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-animate="fade-up" data-delay="300">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">They helped me claim my rightful inheritance and gave me the legal knowledge to stand up for myself. Life-changing experience.</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/testimonial-3.jpg" alt="Anonymous" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Kavitha R.</h4>
+                            <p class="testimonial-role">Financial Rights Case</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         8. ACHIEVEMENTS SECTION
+         =========================================== -->
+    <section class="achievements section" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Achievements</h2>
+                <p class="section-subtitle">Recognition for our unwavering commitment to justice</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card" data-animate="fade-up" data-delay="100">
+                    <div class="achievement-icon">🏆</div>
+                    <h3 class="achievement-title">Best Seva Nandi Award 2025</h3>
+                    <p class="achievement-date">Vijayawada - July 27, 2025</p>
+                    <p class="achievement-description">Recognized for outstanding social service and community impact.</p>
+                </div>
+                
+                <div class="achievement-card" data-animate="fade-up" data-delay="200">
+                    <div class="achievement-icon">📜</div>
+                    <h3 class="achievement-title">NITI Aayog Registration</h3>
+                    <p class="achievement-date">Unique ID: AP/2024/0427866</p>
+                    <p class="achievement-description">Official government recognition as a registered NGO.</p>
+                </div>
+                
+                <div class="achievement-card" data-animate="fade-up" data-delay="300">
+                    <div class="achievement-icon">🎖️</div>
+                    <h3 class="achievement-title">MSME Udyam Certified</h3>
+                    <p class="achievement-date">UDYAM-AP-06-0041081</p>
+                    <p class="achievement-description">Certified organization under Government of India MSME scheme.</p>
+                </div>
+                
+                <div class="achievement-card" data-animate="fade-up" data-delay="400">
+                    <div class="achievement-icon">⚖️</div>
+                    <h3 class="achievement-title">Trust Act Registration</h3>
+                    <p class="achievement-date">Reg. No2. B/V/2023</p>
+                    <p class="achievement-description">Registered under Indian Trust Act 1882 for charitable work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         9. PERFORMANCE / IMPACT SECTION
+         =========================================== -->
+    <section class="performance section" id="performance">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Impact in Numbers</h2>
+                <p class="section-subtitle">Measurable change. Lasting results.</p>
+            </div>
+            
+            <div class="performance-content">
+                <div class="performance-chart" data-animate="fade-right">
+                    <h3>Cases Handled by Category (2024)</h3>
+                    <div class="chart-bars">
+                        <div class="chart-bar">
+                            <div class="chart-bar-fill" data-percent="40" style="width: 40%; background: var(--primary-empowerment)"></div>
+                            <span class="chart-label">Family Issues (40%)</span>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="chart-bar-fill" data-percent="25" style="width: 25%; background: var(--primary-justice)"></div>
+                            <span class="chart-label">Financial Cases (25%)</span>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="chart-bar-fill" data-percent="15" style="width: 15%; background: var(--primary-hope)"></div>
+                            <span class="chart-label">Missing Persons (15%)</span>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="chart-bar-fill" data-percent="20" style="width: 20%; background: var(--secondary-purple)"></div>
+                            <span class="chart-label">Human Rights (20%)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="performance-highlights" data-animate="fade-left">
+                    <div class="highlight-card">
+                        <h4>98% Success Rate</h4>
+                        <p>Nearly all cases resolved favorably for our clients</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>24/7 Availability</h4>
+                        <p>Emergency support available round the clock</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>100% Confidential</h4>
+                        <p>Your privacy and safety are guaranteed</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Free Consultation</h4>
+                        <p>Initial assessment at no cost to you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         10. TEAM SECTION
+         =========================================== -->
+    <section class="team section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-subtitle">Dedicated professionals committed to your cause</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- Featured Team Member - Dr. Rajani -->
+                <div class="team-card team-card-featured" data-animate="zoom-in">
+                    <div class="team-image">
+                        <img src="assets/images/dr-rajani.png" alt="Dr. Amireddy Rajani">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#" class="social-link" aria-label="LinkedIn"><span>in</span></a>
+                                <a href="#" class="social-link" aria-label="Twitter"><span>𝕏</span></a>
+                                <a href="#" class="social-link" aria-label="Email"><span>✉</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Dr. Amireddy Rajani</h3>
+                        <p class="team-role">National Women Chairman All India</p>
+                        <ul class="team-credentials">
+                            <li>State Vice President - Manavadhikar Forum</li>
+                            <li>State President - Divingula Andhra Pradesh</li>
+                            <li>BC Mahila President</li>
+                        </ul>
+                        <p class="team-bio">Leading India's mission for women's rights and social justice with over 15 years of dedicated service.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-card" data-animate="fade-up" data-delay="100">
+                    <div class="team-image">
+                        <img src="assets/images/team-1.jpg" alt="Team Member">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#" class="social-link" aria-label="LinkedIn"><span>in</span></a>
+                                <a href="#" class="social-link" aria-label="Email"><span>✉</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Legal Advisor</h3>
+                        <p class="team-role">Senior Legal Counsel</p>
+                        <p class="team-bio">Expert in family law and human rights with 10+ years experience.</p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-card" data-animate="fade-up" data-delay="200">
+                    <div class="team-image">
+                        <img src="assets/images/team-2.jpg" alt="Team Member">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#" class="social-link" aria-label="LinkedIn"><span>in</span></a>
+                                <a href="#" class="social-link" aria-label="Email"><span>✉</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Case Manager</h3>
+                        <p class="team-role">Client Relations Head</p>
+                        <p class="team-bio">Compassionate support specialist helping families navigate complex cases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         11. GALLERY SECTION
+         =========================================== -->
+    <section class="gallery section" id="gallery">
+        <div class="container-wide">
+            <div class="section-header">
+                <h2 class="section-title">Our Work in Action</h2>
+                <p class="section-subtitle">Moments from our events, campaigns, and community outreach</p>
+            </div>
+            
+            <!-- Gallery Filter -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="awards">Awards</button>
+                <button class="filter-btn" data-filter="campaigns">Campaigns</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="awards" data-animate="fade-up">
+                    <img src="assets/images/gallery-1.jpg" alt="Best Seva Nandi Award 2025">
+                    <div class="gallery-overlay">
+                        <h4>Best Seva Nandi Award</h4>
+                        <p>Vijayawada 2025</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-item-large" data-category="events" data-animate="fade-up">
+                    <img src="assets/images/gallery-2.jpg" alt="Community Event">
+                    <div class="gallery-overlay">
+                        <h4>Women Empowerment Rally</h4>
+                        <p>500+ participants</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="campaigns" data-animate="fade-up">
+                    <img src="assets/images/gallery-3.jpg" alt="Awareness Campaign">
+                    <div class="gallery-overlay">
+                        <h4>Know Your Rights Campaign</h4>
+                        <p>Legal literacy drive</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events" data-animate="fade-up">
+                    <img src="assets/images/gallery-4.jpg" alt="Workshop">
+                    <div class="gallery-overlay">
+                        <h4>Self Defense Workshop</h4>
+                        <p>Empowerment training</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item gallery-item-tall" data-category="awards" data-animate="fade-up">
+                    <img src="assets/images/gallery-5.jpg" alt="Recognition Event">
+                    <div class="gallery-overlay">
+                        <h4>NITI Aayog Recognition</h4>
+                        <p>Official ceremony</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="campaigns" data-animate="fade-up">
+                    <img src="assets/images/gallery-6.jpg" alt="Outreach Program">
+                    <div class="gallery-overlay">
+                        <h4>Rural Outreach Program</h4>
+                        <p>Reaching underserved areas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         12. BLOG / NEWS SECTION
+         =========================================== -->
+    <section class="blog section" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest News & Insights</h2>
+                <p class="section-subtitle">Stay informed about women's rights and social justice</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card" data-animate="fade-up" data-delay="100">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-1.jpg" alt="Blog Post">
+                        <span class="blog-category">Legal Rights</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Understanding Your Rights in Domestic Disputes</h3>
+                        <p class="blog-meta">
+                            <span>📅 December 5, 2025</span>
+                            <span>👤 Dr. Rajani</span>
+                        </p>
+                        <p class="blog-excerpt">Learn about legal protections available to women facing domestic challenges and how to seek help...</p>
+                        <a href="blog.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-animate="fade-up" data-delay="200">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-2.jpg" alt="Blog Post">
+                        <span class="blog-category">Success Story</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">How We Reunited 50 Missing Persons in 2024</h3>
+                        <p class="blog-meta">
+                            <span>📅 November 28, 2025</span>
+                            <span>👤 HROAI Team</span>
+                        </p>
+                        <p class="blog-excerpt">A year-end review of our missing persons cases and the families we brought back together...</p>
+                        <a href="blog.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card" data-animate="fade-up" data-delay="300">
+                    <div class="blog-image">
+                        <img src="assets/images/blog-3.jpg" alt="Blog Post">
+                        <span class="blog-category">Empowerment</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Women's Financial Independence: A Complete Guide</h3>
+                        <p class="blog-meta">
+                            <span>📅 November 15, 2025</span>
+                            <span>👤 Legal Team</span>
+                        </p>
+                        <p class="blog-excerpt">Essential steps every woman should take to secure financial freedom and stability...</p>
+                        <a href="blog.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-cta">
+                <a href="blog.html" class="btn btn-secondary">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         13. FAQ SECTION
+         =========================================== -->
+    <section class="faq section" id="faq">
+        <div class="container-narrow">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item" data-animate="fade-up" data-delay="100">
+                    <button class="faq-question">
+                        <span>How can I contact HROAI for urgent help?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can reach us 24/7 at <strong>+91 99088 49785</strong> or email <strong>raajani55@gmail.com</strong>. For emergencies, call immediately and we'll respond within the hour. You can also visit our office at Gandhi Nagar, Machilipatnam.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate="fade-up" data-delay="200">
+                    <button class="faq-question">
+                        <span>Are your services free?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, initial consultation is completely free. For ongoing case support, we work on a case-by-case basis and offer financial assistance to those in need. Our mission is to help, not profit.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate="fade-up" data-delay="300">
+                    <button class="faq-question">
+                        <span>Is my information kept confidential?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We maintain 100% confidentiality for all cases. Your privacy and safety are our top priority. All communications are secure and case details are never shared without your explicit consent.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate="fade-up" data-delay="400">
+                    <button class="faq-question">
+                        <span>What areas do you serve?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While our main office is in Machilipatnam, Krishna District, we serve all of Andhra Pradesh and coordinate with partner organizations across India. We can help regardless of your location.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate="fade-up" data-delay="500">
+                    <button class="faq-question">
+                        <span>How long does case resolution typically take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Timeline varies by case complexity. Simple documentation may take days, while legal cases can take weeks to months. We provide regular updates and work as quickly as possible while ensuring thorough support.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-animate="fade-up" data-delay="600">
+                    <button class="faq-question">
+                        <span>Can you help with government documentation?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We assist with Udyam registration, E-SHRAM cards, PAN cards, Ayushman cards, pensions, and all government online services. We guide you through the entire process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         14. CONTACT SECTION
+         =========================================== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We're here to help. Reach out today.</p>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" data-animate="fade-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="family">Family Issues</option>
+                                <option value="financial">Financial Issues</option>
+                                <option value="missing">Missing Person</option>
+                                <option value="rights">Human Rights</option>
+                                <option value="online">Online Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Describe your situation in detail..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span>I agree to the <a href="privacy.html">privacy policy</a> and consent to data processing.</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <span>Send Message</span>
+                            <span class="btn-loader"></span>
+                        </button>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper" data-animate="fade-left">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📞</div>
+                            <div class="contact-info-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+919908849785">+91 99088 49785</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">✉️</div>
+                            <div class="contact-info-text">
+                                <h4>Email</h4>
+                                <a href="mailto:raajani55@gmail.com">raajani55@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📍</div>
+                            <div class="contact-info-text">
+                                <h4>Office</h4>
+                                <p>Gandhi Nagar, Machilipatnam<br>521001, Krishna District<br>Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">🕒</div>
+                            <div class="contact-info-text">
+                                <h4>Hours</h4>
+                                <p>24/7 Emergency Support<br>Office: Mon-Sat, 9 AM - 6 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-registration-info">
+                        <h4>Official Registrations</h4>
+                        <ul>
+                            <li><strong>Trust Act:</strong> Reg. No2. B/V/2023</li>
+                            <li><strong>NITI Aayog:</strong> AP/2024/0427866</li>
+                            <li><strong>MSME Udyam:</strong> AP-06-0041081</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+         15. FOOTER
+         =========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Column 1 - About -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.svg" alt="HROAI Logo">
+                        <span>HROAI</span>
+                    </div>
+                    <p class="footer-description">Human Rights Organization All India - Empowering women, protecting rights, and delivering justice across the nation.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">f</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                
+                <!-- Footer Column 2 - Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#blog">News & Blog</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 3 - Services -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Family Issues</a></li>
+                        <li><a href="#services">Financial Support</a></li>
+                        <li><a href="#services">Missing Persons</a></li>
+                        <li><a href="#services">Human Rights</a></li>
+                        <li><a href="#services">Online Services</a></li>
+                        <li><a href="#services">Legal Aid</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Footer Column 4 - Newsletter -->
+                <div class="footer-column">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <p>Subscribe to our newsletter for updates on women's rights and social justice.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="newsletter-note">We respect your privacy. Unsubscribe anytime.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <span>|</span>
+                    <a href="sitemap.xml">Sitemap</a>
+                </div>
+                <p class="footer-copyright">© 2025 Human Rights Organization All India. All rights reserved. | Developed with ❤️ for women's empowerment.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===========================================
+         16. SUPPORT POPUP WIDGET
+         =========================================== -->
+    <div class="support-popup" id="supportPopup">
+        <button class="support-toggle" id="supportToggle" aria-label="Toggle support chat">
+            <span class="support-icon">💬</span>
+            <span class="support-close">✕</span>
+        </button>
+        
+        <div class="support-panel" id="supportPanel">
+            <div class="support-header">
+                <h4>Need Help?</h4>
+                <p>We're here 24/7</p>
+            </div>
+            
+            <div class="support-content">
+                <div class="support-option">
+                    <a href="tel:+919908849785" class="support-link">
+                        <span class="support-link-icon">📞</span>
+                        <div class="support-link-text">
+                            <strong>Call Now</strong>
+                            <span>+91 99088 49785</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="support-option">
+                    <a href="https://wa.me/919908849785" class="support-link" target="_blank">
+                        <span class="support-link-icon">💬</span>
+                        <div class="support-link-text">
+                            <strong>WhatsApp</strong>
+                            <span>Quick response</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="support-option">
+                    <a href="mailto:raajani55@gmail.com" class="support-link">
+                        <span class="support-link-icon">✉️</span>
+                        <div class="support-link-text">
+                            <strong>Email Us</strong>
+                            <span>raajani55@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="support-option">
+                    <a href="#contact" class="support-link">
+                        <span class="support-link-icon">📝</span>
+                        <div class="support-link-text">
+                            <strong>Contact Form</strong>
+                            <span>Detailed inquiry</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="support-footer">
+                <p>Emergency? Call immediately!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+</file>
+
+<file path="robots.txt">
+# robots.txt for Dr. Amireddy Rajani Portfolio
+# https://dramireddyrajani.org/
+
+# Allow all search engine bots
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 0
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://dramireddyrajani.org/sitemap.xml
+
+# Cache control
+# Assets can be cached
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+</file>
+
+<file path="sitemap.xml">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://dramireddyrajani.org/</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Main Sections (anchored links on single page) -->
+    <url>
+        <loc>https://dramireddyrajani.org/#profile</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://dramireddyrajani.org/#services</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://dramireddyrajani.org/#schemes</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://dramireddyrajani.org/#contact</loc>
+        <lastmod>2024-12-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>
+</file>
+
+<file path="test.html">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Test Heading</h1>
+    <p>If you can see this text in your browser, CSS is working!</p>
+    
+    <div class="container">
+        <div class="section">
+            <h2>Test Section</h2>
+            <p>This is test content inside a section.</p>
+        </div>
+    </div>
+</body>
+</html>
+</file>
+
+</files>
